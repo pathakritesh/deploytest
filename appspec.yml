@@ -1,0 +1,6 @@
+os: linux
+version: 0.0
+files: 
+  - 
+    destination: /home/ubuntu/airflow/dags
+    source: /
