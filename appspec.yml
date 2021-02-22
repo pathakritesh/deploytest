@@ -6,6 +6,6 @@ files:
     source: /
 hooks:
   ApplicationStart:
-   - location: /home/ubuntu/airflow/dags/runpp.sh
+   - location: runpp.sh
    - timeout: 3600
    - runas: ubuntu
