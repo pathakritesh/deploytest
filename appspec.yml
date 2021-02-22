@@ -2,5 +2,10 @@ os: linux
 version: 0.0
 files: 
   - 
-    destination: /home/ubuntu/airflow/dags
+    destination: /home/ubuntu/mdags
     source: /
+hooks:
+  ApplicationStart:
+   - location: /runpp.sh
+   - timeout: 3600
+   - runas: ubuntu
