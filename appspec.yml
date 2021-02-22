@@ -1,15 +1,11 @@
---- 
+os: linux
+version: 0.0
 files: 
   - 
     destination: /home/ubuntu/mdags
     source: /
-hooks: 
-  ApplicationStart: 
-    - 
-      location: runpp.sh
-    - 
-      timeout: 3600
-    - 
-      runas: ubuntu
-os: linux
-version: 0.0
+hooks:
+  ApplicationStart:
+   - location: /test/runpp.sh
+   - timeout: 3600
+   - runas: ubuntu
