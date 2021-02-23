@@ -6,6 +6,6 @@ files:
     source: /
 hooks:
   ApplicationStart:
-   - location: runpp.sh
+   - location: /script/runpp.sh
    - timeout: 3600
    - runas: ubuntu
