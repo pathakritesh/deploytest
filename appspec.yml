@@ -5,7 +5,7 @@ files:
     destination: /home/ubuntu/mdags
     source: /
 hooks:	
-  BeforeInstall:	 
+  ApplicationStart:	 
     - location: scripts/runpp.sh  
       timeout: 300	     
       runas: ubuntu	     
